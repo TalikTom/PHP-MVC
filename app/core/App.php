@@ -13,7 +13,7 @@ class App{
 
         Log::info($parts);
 
-        
+
         $controller='';
         if(!isset($parts[0]) || $parts[0]===''){
             $controller='IndexController';

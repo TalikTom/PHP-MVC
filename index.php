@@ -25,7 +25,7 @@ spl_autoload_register(function($class){
     $paths = explode(PATH_SEPARATOR,get_include_path());
     foreach($paths as $path){
 
-        $datoteka = $path . DIRECTORY_SEPARATOR .
+        $file = $path . DIRECTORY_SEPARATOR .
             $class . '.php';
 
         if(file_exists($file)){
