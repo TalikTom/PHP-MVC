@@ -6,27 +6,34 @@ require_once 'Response.php';
 require_once 'router.php';
 
 
+define('BP',__DIR__ . DIRECTORY_SEPARATOR);
+define('BP_APP', BP . 'app' . DIRECTORY_SEPARATOR);
+
+$forAutoLoad=[
+    BP_APP . 'controller',
+    BP_APP . 'core',
+    BP_APP . 'model'
+];
 
 
+$paths = implode(PATH_SEPARATOR,$forAutoLoad);
 
+set_include_path($paths);
 
+spl_autoload_register(function($class){
 
-// connect to the database, execute a query
+    $paths = explode(PATH_SEPARATOR,get_include_path());
+    foreach($paths as $path){
 
+        $datoteka = $path . DIRECTORY_SEPARATOR .
+            $class . '.php';
 
+        if(file_exists($file)){
+            require_once $file;
+            break;
+        }
+    }
+});
 
-//$id = $_GET['id'];
-//
-//$query = "select * from notes where user_id = :id";
-
-//$notes = $db->query($query, [':id' => $id])->fetchAll(PDO::FETCH_ASSOC);
-
-//
-//
-//
-//foreach ($notes as $note) {
-//    echo '<li>' . $note['body'] . '</li';
-//}
-
-
+App::start();
 
