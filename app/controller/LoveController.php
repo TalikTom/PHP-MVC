@@ -5,7 +5,7 @@ class IndexController
 
     public function index()
     {
-        require_once 'controllers/index.php';
+        require_once 'controllers/love.php';
     }
 
 
