@@ -1,12 +1,15 @@
 <?php
 
-class IndexController
+class LoveController extends Controller
 {
 
-    public function index()
+    public function love()
     {
-        require_once 'controllers/love.php';
+
+        $this->view->render('love');
+
     }
+
 
 
 }

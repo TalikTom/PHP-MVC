@@ -16,5 +16,12 @@ class IndexController extends Controller
 
     }
 
+    public function love()
+    {
+
+        $this->view->render('love');
+
+    }
+
 
 }

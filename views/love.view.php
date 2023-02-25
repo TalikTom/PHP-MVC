@@ -1,5 +1,4 @@
-<?php include 'partials/header.php'; ?>
-<?php include 'partials/nav.php'; ?>
+<?php require_once 'controllers/love.php' ?>
 
 <?php
 $name1 = '';
@@ -162,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ?>
 
 
-        <form action="/love-calculator" method="POST" class="love-form">
+        <form action="/index/love" method="POST" class="love-form">
             <label for="name1" id="name1">Enter name of the first person</label>
             <input type="text" name="name1">
             <label for="name2" id="name2">Enter name of the second person</label>
@@ -173,4 +172,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </main>
 
-<?php include 'partials/footer.php' ?>
