@@ -30,5 +30,12 @@ class IndexController extends Controller
 
     }
 
+    public function chart()
+    {
+
+        $this->view->render('chart');
+
+    }
+
 
 }
