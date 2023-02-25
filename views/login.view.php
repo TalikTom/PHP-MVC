@@ -1,8 +1,7 @@
-<?php include 'partials/header.php'; ?>
-<?php include 'partials/nav.php'; ?>
+<?php require_once 'controllers/login.php' ?>
 
     <main class="center-grid margin-top">
-        <form action="/authorization" method="post">
+        <form action="/index/authorization" method="post">
             <label for="email">Email</label>
             <input type="text" name="email"
                    value="<?= $email ?>"
@@ -13,4 +12,3 @@
         </form>
     </main>
 
-<?php include 'partials/footer.php'; ?>

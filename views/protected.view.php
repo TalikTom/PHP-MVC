@@ -1,5 +1,6 @@
-<?php include 'partials/header.php'; ?>
-<?php include 'partials/nav.php'; ?>
+<?php require_once 'controllers/protected.php' ?>
+
+
     <main class="center-grid margin-top">
         <!DOCTYPE html>
         <html lang="en">
@@ -13,8 +14,7 @@
         <p>
             <?= $message ?>
         </p>
-        <a href="/logout">Logout</a>
+        <a href="/index/logout">Logout</a>
         </body>
         </html>
     </main>
-<?php include 'partials/footer.php'; ?>

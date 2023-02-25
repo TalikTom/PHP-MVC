@@ -5,8 +5,8 @@ if($_POST['email']==='test@gmail.com' &&
     session_start();
     $_SESSION['auth']=true;
     setcookie('email',$_POST['email']);
-    header('location: /protected');
+    header('location: /index/protected');
 
 }else{
-    header('location: /login?email=' . $_POST['email']);
+    header('location: /index/login?email=' . $_POST['email']);
 }

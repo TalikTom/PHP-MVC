@@ -5,7 +5,7 @@
         <li><a href="/index/oib">OIB Generator</a></li>
         <li><a href="/index/love">Love Calculator</a></li>
         <li><a href="/index/chart">Chart</a></li>
-        <li><?= $_SESSION['auth'] ? '<a href="/logout">Logout</a>' : '<a href="/login">Login</a>' ?>
-        <li><?= $_SESSION['auth'] ? '<a href="/protected">Protected</a>' : '' ?>
+        <li><?= $_SESSION['auth'] ? '<a href="/index/logout">Logout</a>' : '<a href="/index/login">Login</a>' ?>
+        <li><?= $_SESSION['auth'] ? '<a href="/index/protected">Protected</a>' : '' ?>
     </ul>
 </nav>

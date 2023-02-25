@@ -12,7 +12,7 @@ if(!$_SESSION['auth']){
 }
 
 
-require 'views/protected.view.php';
+
 
 
 

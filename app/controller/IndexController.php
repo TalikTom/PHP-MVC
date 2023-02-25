@@ -37,5 +37,34 @@ class IndexController extends Controller
 
     }
 
+    public function login()
+    {
+
+        $this->view->render('login');
+
+    }
+
+    public function logout()
+    {
+
+        $this->view->render('logout');
+
+    }
+
+    public function authorization()
+    {
+
+        $this->view->render('authorization');
+
+    }
+
+    public function protected()
+    {
+
+        $this->view->render('protected');
+
+    }
+
+
 
 }

@@ -21,7 +21,7 @@ class App{
             $controller = ucfirst($parts[0]) . 'Controller';
         }
 
-        Log::info($controller);
+//        Log::info($controller);
 
 
 
@@ -32,7 +32,7 @@ class App{
             $method=$parts[1];
         }
 
-        Log::info($method);
+//        Log::info($method);
 
         if(!(class_exists($controller) && method_exists($controller,$method))){
             echo 'No exist ' . $controller . '-&gt;' . $method;

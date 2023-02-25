@@ -16,7 +16,7 @@ class View
         $viewFile = BP. 'views' .
             DIRECTORY_SEPARATOR . $view . '.view' . '.php';
 
-        echo $viewFile;
+//        echo $viewFile;
         ob_start();
         extract($parameters);
         if(file_exists($viewFile)){
