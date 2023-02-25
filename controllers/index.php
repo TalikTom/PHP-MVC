@@ -68,4 +68,3 @@ $options = ['top-right', 'top-left', 'bottom-right', 'bottom-left'];
 
 ?>
 
-<?php require 'views/index.view.php'; ?>
