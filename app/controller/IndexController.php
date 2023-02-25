@@ -1,11 +1,19 @@
 <?php
 
-class IndexController
+class IndexController extends Controller
 {
 
     public function index()
     {
-        require_once 'controllers/index.php';
+
+        $this->view->render('index');
+
+    }
+
+    public function contact()
+    {
+        $this->view->render('contact');
+
     }
 
 

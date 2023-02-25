@@ -1,5 +1,4 @@
-<?php include 'partials/header.php'; ?>
-<?php include 'partials/nav.php'; ?>
+
 
 <div class="main_container ">
     <div class="container">
@@ -477,6 +476,6 @@
     </div>
 </div>
 
-<?php include 'partials/footer.php'?>
+
 
 

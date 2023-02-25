@@ -7,11 +7,11 @@ class App{
 
         $route = Request::getRoute();
 
-        Log::info($route);
+
 
         $parts = explode('/',substr($route,1));
 
-        Log::info($parts);
+
 
 
         $controller='';
