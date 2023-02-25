@@ -1,5 +1,4 @@
-<?php include 'partials/header.php'; ?>
-<?php include 'partials/nav.php'; ?>
+<?php require_once 'controllers/oib.php' ?>
 
 
     <div class="center-grid">
@@ -12,7 +11,7 @@
 
         ?>
         <button class="btn" type="button" onclick="copyEvent('single')">Copy to clipboard</button>
-        <form class="generator" action="/oib-generator" method="POST">
+        <form class="generator" action="/index/oib" method="POST">
             <label for="quantity">Enter how many OIBs you need:</label>
             <input type="number" name="quantity" id="quantity" value="<?= $_POST['quantity'] ?? '' ?>">
             <input type="submit" value="Get me fresh OIBs!">
@@ -39,4 +38,3 @@
 
     </div>
 
-<?php include 'partials/footer.php' ?>

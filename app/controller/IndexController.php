@@ -23,5 +23,12 @@ class IndexController extends Controller
 
     }
 
+    public function oib()
+    {
+
+        $this->view->render('oib');
+
+    }
+
 
 }
