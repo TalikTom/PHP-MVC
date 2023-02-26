@@ -1,3 +1,3 @@
-# live-practice
+# PHP-MVC-Livesite
 
-visit www.agal.uk - my live site
+Refactored older version of my practice website (agal.uk) to MVC framework
